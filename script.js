@@ -47,3 +47,12 @@ if (num >= 17 && num <= 25) {
 else {
     console.log("7:\nei ole välillä 17 - 25")
 }
+
+/*
+1. Tehkää silmukka, joka käy läpi luvut 1-100 ja tulostaa luvun jos se on jaollinen seitsemällä
+*/
+for (let i = 1; i < 101; i++) {
+    if (i % 7 == 0) {
+        console.log(i)
+    }
+}
