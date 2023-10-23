@@ -27,3 +27,23 @@ function fnctn(str, int) {
     return str.slice(int)
 }
 console.log("5: \n" + fnctn("foobar", 3))
+
+/* 
+let a = 33;
+6. Tarkista onko jokin luku jaollinen kolmella. Jos on tulosta "jaollinen kolmella"
+7. Tarkista onko jokin luku välillä 17 - 25. Jos on tulosta "on välillä 17 - 25"
+*/
+
+let num = 25;
+if (num % 3 == 0) {
+    console.log("6:\njaollinen kolmella")
+}
+else {
+    console.log("6:\nei ole jaollinen kolmella")
+}
+if (num >= 17 && num <= 25) {
+    console.log("7:\non välillä 17 - 25")
+}
+else {
+    console.log("7:\nei ole välillä 17 - 25")
+}
