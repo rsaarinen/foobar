@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+#results td {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+#names td {
+  width: 150px;
+  height: 30px;
+  text-align: right;
+}
+
+#results,
+#results td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#nextBtn,
+#resetBtn {
+  height: 40px;
+  width: 100px;
+  padding: 5px;
+}
+
+.btnGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
