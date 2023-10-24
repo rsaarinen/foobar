@@ -64,6 +64,9 @@ for (let i = 1; i < 101; i++) {
 5. Tee funktio, joka tarkistaa onko sille annettu string parametri palidromi 
 (eli onko sana lopusta alkuun sama kuin alusta loppuun. 
     Esim "saippuakauppias" on palindromi ja "otto" on palindromi)
+6. Googlatkaa string template literal. Ja tutkikaa sitä.
+Tulosta 10 kertaa "Numero 0", "Numero 1", kne allekkain.
+Käytä string template literalia. Tee sama käyttäen string + -operaattoria
 */
 let list = [8, 47, 16, 91, 75, 2, 22, 36, 17, 63];
 
@@ -111,3 +114,11 @@ function checkPalindrome(str) {
   return str == str.split("").reverse().join("");
 }
 console.log(checkPalindrome("saippuakauppias"));
+
+// 6.
+for (let i = 1; i < 11; i++) {
+  console.log(`Numero: ${i}`);
+}
+for (let i = 1; i < 11; i++) {
+  console.log("Numero: " + i);
+}
