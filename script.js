@@ -148,3 +148,7 @@ for (let i = 0; i < 6; i++) {
   }
 }
 console.log(l1);
+
+// 8.
+list.length = 0;
+console.log(list);
