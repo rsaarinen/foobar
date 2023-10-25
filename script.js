@@ -152,3 +152,18 @@ console.log(l1);
 // 8.
 list.length = 0;
 console.log(list);
+
+// js spread operator (...) [7,8,89] ...list = 17 8 89
+// esimerkki (listojen yhdistäminen):
+const listA = [1, 2];
+const listB = [3, 4];
+const listC = [...listA, ...listB];
+console.log(listC);
+
+// 9.
+const list1 = [1, 2, 3, 4, 5];
+const list2 = [6, 7, 8, 9, 10];
+const string1 = "text1";
+const string2 = "text2";
+const list3 = [...list1, string1, string2, ...list2];
+console.log(list3);
