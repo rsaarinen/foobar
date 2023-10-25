@@ -67,6 +67,16 @@ for (let i = 1; i < 101; i++) {
 6. Googlatkaa string template literal. Ja tutkikaa sitä.
 Tulosta 10 kertaa "Numero 0", "Numero 1", kne allekkain.
 Käytä string template literalia. Tee sama käyttäen string + -operaattoria
+7. Tehkää 5-elementtinen lista l1, jonka elementit ovat 5-elementtisiä 
+listoja (2-ulotteinen taulukko). Tulostakaa listoken indeksit. 
+Esim x=1, y=2, missä x = listan l1 elementin indeksi ja 
+y = siinä olevan listan indeksi.
+esimerkki tulostus: x=0, y=0
+                    x=0, y=1
+                    x=0, y=1
+                    ....
+                    x=5, y=0
+
 */
 let list = [8, 47, 16, 91, 75, 2, 22, 36, 17, 63];
 
@@ -122,3 +132,19 @@ for (let i = 0; i < 11; i++) {
 for (let i = 0; i < 11; i++) {
   console.log("Numero: " + i);
 }
+
+// 7.
+
+let l1 = [
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+];
+for (let i = 0; i < 6; i++) {
+  for (let j = 0; j < 6; j++) {
+    console.log(`x=${i}, y=${j}`);
+  }
+}
+console.log(l1);
