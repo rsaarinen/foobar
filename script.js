@@ -186,3 +186,28 @@ let summa = listaa.reduce(
   initialValue
 );
 console.log(summa);
+
+/*
+11. Tee luokka Cat, jonka attribuutit ovat name, age, owner.
+Luokassa on metodi getInfo(), joka palauttaa stringin "Name: <name>, age <age>, owner: <owner>". 
+Tee kaksi eri Cat instanssia ja tulosta ne.
+*/
+
+class Cat {
+  constructor(name, age, owner) {
+    this.name = name;
+    this.age = age;
+    this.owner = owner;
+  }
+
+  getInfo() {
+    let str = `Name: ${this.name}, Age: ${this.age}, Owner: ${this.owner}`;
+    return str;
+  }
+}
+
+const catOne = new Cat("Maxwell", 7, "Matti");
+console.log(catOne.getInfo());
+
+const catTwo = new Cat("John", 56, "Deere");
+console.log(catTwo.getInfo());
