@@ -167,3 +167,22 @@ const string1 = "text1";
 const string2 = "text2";
 const list3 = [...list1, string1, string2, ...list2];
 console.log(list3);
+
+// 10.
+let listaa = [8, 47, 16, 91, 75, 2, 22, 36, 17, 63];
+/*
+function sumOfList(list) {
+  let sum = 0;
+  for (let i = 0; i < list.length; i++) {
+    sum += list[i];
+  }
+  return sum;
+}
+console.log(sumOfList(listaa));
+*/
+let initialValue = 0;
+let summa = listaa.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+console.log(summa);
