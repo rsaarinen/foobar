@@ -51,6 +51,37 @@
       -koordinaatit konsoliin.
       <div id="xy"></div>
     </p>
+    <h2>Tehtävä 4.</h2>
+    <p>
+      Tehkää alla oleviin div-tageihin 'click' eventHandelerit, joissa tekstin
+      väri vaihtuu -> "red" kun tekstiä klikkaa. Tageissa on kaikissa sama
+      class-name.
+    </p>
+    <div class="teksti">Hauki</div>
+    <div class="teksti">Silakka</div>
+    <div class="teksti">Ahven</div>
+    <p>
+      eventHandlerin funktiossa mukana tuleva parametri event sisältää propertyn
+      'target', joka viittaa siihen elementtin josta event tuli. esim<br />
+      <code>function f(event) { event.target.style.background = "blue"}</code>,
+      jossa elementin, josta event tuli, taustaväri vaihtuu. Avainsanat
+      getElementsByClassName (palauttaa listan elementeistä, joilla on kyseinen
+      class ).
+    </p>
+
+    <h2>Tehtävä 5.</h2>
+    Lisätkää alla olevaan listaan seuraavat eläimet: hirvi, karhu, orava, käärme, apina, norsu, hämähäkki.
+    <h3>Eläinlista</h3>
+    <ol id="animals">
+      <li>siili</li>
+    </ol>
+
+    <p>
+      Tehkää eläimistä ensin array. Sitten käykää se for tai forEach -silmukalla
+      läpi ja lisätkää ol-tagiin li-tag jokaista eläintä kohti. Lisätkää eläimen
+      nimi listaan käyttämällä innerHTML:ää. Avainsanat:
+      <b>createElement, appendChild ja innerHTML</b>
+    </p>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
